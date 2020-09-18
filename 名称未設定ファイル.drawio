@@ -1,1 +1,55 @@
-<mxfile host="app.diagrams.net" modified="2020-09-18T05:42:34.970Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" version="13.6.9" etag="h5QDYxkp9BIcfrUO3AVu" type="github"><diagram id="ZXuUcHFbHCo8vqASvwOp">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-09-18T05:56:44.836Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="uMTxI2BuZjTP_iXLXVu2" version="13.6.9" type="github">
+  <diagram id="ZXuUcHFbHCo8vqASvwOp" name="ページ1">
+    <mxGraphModel dx="2013" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LsFIQffZ9LtRUQUt6xz1-5" value="orders" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="380" y="390" width="300" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="LsFIQffZ9LtRUQUt6xz1-6" value="| Column      | Type       | Options                       |&#xa;| ------ | -------------- | ------------------------------------  |&#xa;| user        | references | null:false, foreign_key: true |&#xa;| item        | references | null:false, foreign_key: true |&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="LsFIQffZ9LtRUQUt6xz1-5">
+          <mxGeometry y="30" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="LsFIQffZ9LtRUQUt6xz1-3" value="ITEMS" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="380" y="90" width="300" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="LsFIQffZ9LtRUQUt6xz1-4" value="| Column              | Type       | Options                       |&#xa;| ------------------- | ---------- | ----------------------------- |&#xa;| image               | string     | null:false                    |&#xa;| item_name           | string     | null:false                    |&#xa;| text                | text       | null:false                    |&#xa;| category            | integer    | null:false                    |&#xa;| product_status      | integer    | null:false                    |&#xa;| shipping_fee_status | integer    | null:false                    |&#xa;| prefecture          | integer    | null:false                    |&#xa;| scheduled_delivery  | integer    | null:false                    |&#xa;| price               | integer    | null:false                    |&#xa;| user                | references | null:false, foreign_key: true |&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="LsFIQffZ9LtRUQUt6xz1-3">
+          <mxGeometry y="30" width="300" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="LsFIQffZ9LtRUQUt6xz1-7" value="addresses" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="380" width="270" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="LsFIQffZ9LtRUQUt6xz1-8" value="| Column        | Type       | Options                       |&#xa;| ------------- | ---------- | ----------------------------  |&#xa;| postal_code   | string     | null:false                    |&#xa;| prefecture    | integer    | null:false                    |&#xa;| city          | string     | null:false                    |&#xa;| house_number  | string     | null:false                    |&#xa;| building_name | string     |                               |&#xa;| telephone     | string     | null:false                    |&#xa;| order         | references | null:false, foreign_key: true |&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="LsFIQffZ9LtRUQUt6xz1-7">
+          <mxGeometry y="30" width="270" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="LsFIQffZ9LtRUQUt6xz1-1" value="USES" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="60" y="90" width="190" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="LsFIQffZ9LtRUQUt6xz1-2" value="| Column     | Type    | Options    |&#xa;| ---------- | ------- | ---------- |&#xa;| nickname   | string  | null:false |&#xa;| email      | string  | null:false |&#xa;| password   | string  | null:false |&#xa;| first_name | string  | null:false |&#xa;| last_name  | string  | null:false |&#xa;| first_kana | string  | null:false |&#xa;| last_kana  | string  | null:false |&#xa;| birthday   | date    | null:false |" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="LsFIQffZ9LtRUQUt6xz1-1">
+          <mxGeometry y="30" width="190" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="LsFIQffZ9LtRUQUt6xz1-16" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;exitX=1.005;exitY=0.644;exitDx=0;exitDy=0;entryX=-0.01;entryY=0.111;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="LsFIQffZ9LtRUQUt6xz1-2" target="LsFIQffZ9LtRUQUt6xz1-5">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="250" y="330" as="sourcePoint" />
+            <mxPoint x="350" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LsFIQffZ9LtRUQUt6xz1-18" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1.005;exitY=0.344;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="LsFIQffZ9LtRUQUt6xz1-2" target="LsFIQffZ9LtRUQUt6xz1-3">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="260" y="250" as="sourcePoint" />
+            <mxPoint x="360" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LsFIQffZ9LtRUQUt6xz1-19" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERone;endFill=1;entryX=-0.01;entryY=0.156;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="LsFIQffZ9LtRUQUt6xz1-6">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="260" y="545" as="sourcePoint" />
+            <mxPoint x="360" y="445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LsFIQffZ9LtRUQUt6xz1-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="LsFIQffZ9LtRUQUt6xz1-4" target="LsFIQffZ9LtRUQUt6xz1-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
