@@ -1,0 +1,43 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        nickname: ニックネーム
+        email: メールアドレス
+        password: パスワード
+        first_name: お名前(姓)
+        last_name: お名前(名)
+        first_kana: お名前カナ(姓)
+        last_kana: お名前カナ(名)
+        birthday: 生年月日
+      item:
+        image: 画像
+        item_name: 商品名
+        text: 商品の説明
+        category_id: カテゴリー
+        product_status_id: 商品の状態
+        shipping_fee_status_id: 配送料の負担
+        prefecture_id: 発送元の地域
+        scheduled_delivery_id: 発送までの日数
+        price: 価格
+    errors:
+      messages:
+        not_a_number: は半角数字で入力して下さい
+        other_than: を選択して下さい
+        invalid: の入力情報が正しくありません
+  activemodel:
+    attributes:
+      order_address:
+        token: クレジットカード情報
+        postal_code: 郵便番号
+        prefecture_id: 都道府県
+        city: 市区町村
+        house_number: 番地
+        building_name: 建物名
+        telephone: 電話番号
+    errors:
+      messages:
+        not_a_number: は半角数字で入力して下さい
+        other_than: を選択して下さい
+        invalid: の入力情報が正しくありません
+  
