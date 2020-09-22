@@ -3,10 +3,6 @@ const pay = () => {
   Payjp.setPublicKey(process.env.PAYJP_PUBLIC_KEY);
   const form = document.getElementById("charge-form");
   // フォームボタン押した際の処理
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const formResult = document.getElementById("charge-form");
-    console.log(formResult)
     const formData = new FormData(formResult);
     console.log(formData)
     // 入力されたカードの情報を定数cardにハッシュ形式で代入
