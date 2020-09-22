@@ -30,12 +30,11 @@ class ItemsController < ApplicationController
   end
 
   def update
-    if @item.valid?
-      @item.update(item_params)
+    if @item.update(item_params)
       redirect_to root_path
-    else
+     else
       render :edit
-    end
+     end
   end
 
   def destroy
