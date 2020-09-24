@@ -1,7 +1,6 @@
 class OrderAddress
   include ActiveModel::Model
-  attr_accessor :postal_code, :prefecture_id, :city, :house_number, :building_name, :telephone, :user_id, :item_id
-  attr_accessor :token
+  attr_accessor :postal_code, :prefecture_id, :city, :house_number, :building_name, :telephone, :user_id, :item_id, :token
 
   # tokenバリデーション
   validates :token, presence: true

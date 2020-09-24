@@ -7,7 +7,9 @@ class OrdersController < ApplicationController
   end
 
   def create
+    binding.pry
     @order = OrderAddress.new(order_params)
+    binding.pry
     @item = Item.find(params[:item_id])
     if @order.valid?
       @order.save
