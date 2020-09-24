@@ -22,3 +22,4 @@ class OrderAddress
                    building_name: building_name, telephone: telephone, order_id: order.id)
   end
 end
+
