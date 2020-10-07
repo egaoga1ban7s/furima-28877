@@ -7,14 +7,14 @@
       SARARA CIRCUS
     </h2>
     <p class='service-explain'>
-      SARARA CIRCUSはだれでもかんたんに購入できます
+      SARARA CIRCUSはだれでもかんたんに購入できます。
     </p>
     <p class='service-explain'>
-      Welcome！！
+      InstagramとTwitterもフォローしてね！新商品情報投稿中　byきみちゃん
     </p>
     <div class='store-btn'>
-      <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
-      <%= link_to image_tag("dl-android.png", class:"google-btn"), "#" %>
+      <%= link_to image_tag("twitter.png", class:"apple-btn"), "#" %>
+      <%= link_to image_tag("instagram.png", class:"instagram-btn"), "#" %>
     </div>
   </div>
   <%# //画面上部の「人生を変えるフリマアプリ」帯部分  %>
@@ -22,18 +22,19 @@
   <%# FURIMAが選ばれる3つの理由部分 %>
   <div class='select-reason-contents'>
     <h2 class='title'>
-      SHARARAが選ばれる3つの理由
+      SHARARA CIRCUSの3つ魅力
     </h2>
     <ul class='reason-lists'>
       <li class='list'>
         <%= image_tag "furima-intro01.png", class:"list-pict" %>
         <span class='reason-list-number'>1</span>
         <h3 class='reason-list-text'>
-          <span class='reason-list-blue-text'>3分</span>
-          ですぐに出品
+          全て
+          <span class='reason-list-blue-text'>オリジナル</span>
+          で出品
         </h3>
         <p class='reason-list-description'>
-          スマホで入力するだけで簡単に出品できる！
+          手作り、手作業で作成しています。
         </p>
       </li>
       <li class='list'>
@@ -41,7 +42,7 @@
         <span class='reason-list-number'>2</span>
         <h3 class='reason-list-text'>
           <span class='reason-list-blue-text'>シンプル</span>
-          で使いやすい
+          で商品が見やすい
         </h3>
         <p class='reason-list-description'>
           めんどくさい入力は必要なく、検索も購入もスムーズ！
@@ -60,25 +61,25 @@
       </li>
     </ul>
   </div>
-  <%# //FURIMAが選ばれる3つの理由部分 %>
+  <%# //SHARARAが選ばれる3つの理由部分 %>
 
   <%# 画面中央の「会員数日本一位」帯部分 %>
   <div class='ad-contents'>
     <h2 class='ad-title'>
-      会員数日本一位
+      全て手作りです！
     </h2>
     <p class='ad-explain'>
-      FURIMAは、フリマアプリで最も人気。
+      SHARARA CIRCUSは、フリマサイトで最も人気。
     </p>
     <p class='ad-explain'>
-      出品・購入回数も業界最多です！
+      購入回数も業界最多です！
     </p>
     <p class='ad-explain'>
       ほしかったあの商品に出会えるかもしれません。
     </p>
     <div class='store-btn'>
-      <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
-      <%= link_to image_tag("dl-android.png", class:"google-btn"), "#" %>
+      <%= link_to image_tag("twitter.png", class:"apple-btn"), "#" %>
+      <%= link_to image_tag("instagram.png", class:"instagram-btn"), "#" %>
     </div>
   </div>
   <%# //画面中央の「会員数日本一位」帯部分 %>
@@ -86,25 +87,25 @@
   <%# FURIMAの特徴 %>
   <div class='feature-contents'>
     <h2 class='title'>
-      FURIMAの特徴
+      SHARARA CIRCUSの特徴
     </h2>
     <ul class='feature-lists'>
       <li class='list'>
         <%= image_tag "furima-intro04.png", class:"list-pict" %>
         <h3 class='feature-list-text'>
-          簡単に売り買いできる
+          簡単に買い物できる
         </h3>
         <p class='feature-list-description'>
-          スマホひとつで、いつでもどこでも簡単に出品・購入が可能！
+          スマホひとつで、いつでもどこでも簡単に購入が可能！
         </p>
       </li>
       <li class='list'>
         <%= image_tag "furima-intro05.png", class:"list-pict" %>
         <h3 class='feature-list-text'>
-          売上金は即日振込みに対応
+          商品依頼ができる
         </h3>
         <p class='feature-list-description'>
-          午前9時までに振込を依頼いただければ、翌日に指定の口座に入金いたします。
+          こんなのが欲しいなどがあれば連絡ください。返信が翌営業日になることがあります。
         </p>
       </li>
       <li class='list'>
@@ -163,7 +164,7 @@
           <%= image_tag "https://s3-ap-northeast-1.amazonaws.com/mercarimaster/uploads/captured_image/content/10/a004.png", class: "item-img" %>
           <div class='item-info'>
             <h3 class='item-name'>
-              商品を出品してね！
+              商品を出品するまで待ってね！
             </h3>
             <div class='item-price'>
               <span>99999999円<br>(税込み)</span>
@@ -182,7 +183,7 @@
   <%#//商品一覧 %>
 </div>
 <div class='purchase-btn'>
-  <span class='purchase-btn-text'>出品する</span>
+  <span class=''>出品する</span>
   <a href='/items/new'>
     <%= image_tag 'camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
   </a>
