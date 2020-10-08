@@ -14,7 +14,7 @@ ja:
         image: 画像
         item_name: 商品名
         text: 商品の説明
-        category_id: カテゴリー
+        category_id: カテゴリ
         product_status_id: 商品の状態
         shipping_fee_status_id: 配送料の負担
         prefecture_id: 発送元の地域
